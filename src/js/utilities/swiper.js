@@ -4,13 +4,13 @@ const swiperFraksi = new Swiper(".swiper-fraksi", {
     1200: {
       slidesPerView: 4,
     },
-    // when window width is <= 499px
-    499: {
-      slidesPerView: 2,
-    },
     // when window width is <= 999px
     768: {
       slidesPerView: 3,
+    },
+    // when window width is <= 499px
+    499: {
+      slidesPerView: 2,
     },
   },
   autoplay: {
