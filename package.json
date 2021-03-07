@@ -1,0 +1,16 @@
+{
+  "name": "dprd-pekalongan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.mix.js",
+  "scripts": {
+    "start:mix" : "npx mix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "laravel-mix": "^6.0.13",
+    "tailwindcss": "^2.0.3"
+  }
+}
