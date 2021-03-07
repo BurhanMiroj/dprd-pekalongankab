@@ -48,7 +48,7 @@ class Footer extends HTMLElement {
                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                 </ul>
-                <p class="px-5 text-center text-white">Copyright &copy; 2021 DPRD Kab. Pekalongan</p>
+                <p class="px-5 text-center text-xs text-white">Copyright &copy; 2021 DPRD Kab. Pekalongan</p>
             </div>
         </div>
     </footer>
