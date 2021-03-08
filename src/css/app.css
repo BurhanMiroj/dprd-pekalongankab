@@ -143,10 +143,11 @@
 .flickity-prev-next-button {
   display: none;
 }
-.icon-link small i {
+.icon-link small img {
   transition: .3s all ease;
+  margin-left: .5rem;
 }
-.icon-link:hover small i {
+.icon-link:hover small img {
   transform: translateX(.3rem);
 }
 
