@@ -156,3 +156,12 @@
 .dropdown-menu a:focus + .dropdown-content {
   display: flex;
 }
+.dropdown-menu a i {
+  transition: .3s all ease;
+}
+.dropdown-menu a:focus i {
+  transform: rotateZ(-180deg);
+  transform-origin: center;
+  margin-left: .4rem;
+  margin-right: -.4rem;
+}
