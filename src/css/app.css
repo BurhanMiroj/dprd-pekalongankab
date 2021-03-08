@@ -152,3 +152,7 @@
   width: .8rem;
   height: .8rem;
 }
+
+.dropdown-menu a:focus + .dropdown-content {
+  display: flex;
+}
