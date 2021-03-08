@@ -12,6 +12,9 @@ const swiperFraksi = new Swiper(".swiper-fraksi", {
     499: {
       slidesPerView: 2,
     },
+    320: {
+      slidesPerView: 2
+    },
   },
   autoplay: {
     delay: 3500,
@@ -23,7 +26,8 @@ const swiperFraksi = new Swiper(".swiper-fraksi", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  }
+  },
+  spaceBetween: 10
 });
 const swiperObjekWisata = new Swiper(".swiper-objek-wisata", {
 slidesPerView: 1,
