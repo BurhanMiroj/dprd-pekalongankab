@@ -26,6 +26,9 @@
 .close-layer.close-active {
   display: block;
 }
+.nav-link:hover, .nav-link a:focus {
+  color: rgb(206, 205, 205);
+}
 .nav-list li a {
   padding: 10px 15px;
   display: flex;
@@ -164,4 +167,7 @@
   transform-origin: center;
   margin-left: .4rem;
   margin-right: -.4rem;
+}
+.dropdown-content li:hover {
+  background-color: #ddd;
 }
