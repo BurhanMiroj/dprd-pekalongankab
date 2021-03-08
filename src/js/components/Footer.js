@@ -11,13 +11,13 @@ class Footer extends HTMLElement {
                 <!-- START : Single Item -->
                 <div class="w-full md:w-1/2 lg:w-1/4 mt-10 lg:mt-0 px-5">
                     <img src="/src/img/content/logo.png" alt="Logo DPRD Kabupaten Pekalongan">
-                    <div class="lg:pr-16 pt-6 text-custom">
+                    <div class="lg:pr-16 pt-6 text-sm md:text-custom">
                         <a href="#">Jl. Alun-alun Utara No. 2 Kajen, Jawa Tengah Kode Pos 51161 Indonesia.</a>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/4 mt-10 lg:mt-0 px-5">
                     <h5 class="font-bold text-gray-400 text-lg border-b md:border-b-0 border-gray-200 pb-2 md:pb-0">Tautan</h5>
-                    <ul class="link-wrapper mt-5 lg:mt-14 text-custom">
+                    <ul class="link-wrapper mt-5 lg:mt-14 text-sm md:text-custom">
                         <li class="py-1 hover:underline"><a href="#">Kabupaten Pekalongan</a></li>
                         <li class="py-1 hover:underline"><a href="#">Provinsi Jawa Tengah</a></li>
                         <li class="py-1 hover:underline"><a href="#">Kementrian Kominfo</a></li>
@@ -26,14 +26,14 @@ class Footer extends HTMLElement {
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/4 mt-10 md:mt-16 lg:mt-0 px-5">
                     <h5 class="font-bold text-gray-400 text-lg border-b md:border-b-0 border-gray-200 pb-2 md:pb-0">Support</h5>
-                    <ul class="link-wrapper mt-5 lg:mt-14 text-custom">
+                    <ul class="link-wrapper mt-5 lg:mt-14 text-sm md:text-custom">
                         <li class="py-1 hover:underline"><a href="#">Contact Us</a></li>
                         <li class="py-1 hover:underline"><a href="#">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/4 mt-10 md:mt-16 lg:mt-0 px-5">
                     <h5 class="font-bold text-gray-400 text-lg border-b md:border-b-0 border-gray-200 pb-2 md:pb-0">Menu</h5>
-                    <ul class="link-wrapper mt-5 lg:mt-14 text-custom">
+                    <ul class="link-wrapper mt-5 lg:mt-14 text-sm md:text-custom">
                         <li class="py-1 hover:underline"><a href="#">Berita</a></li>
                         <li class="py-1 hover:underline"><a href="#">Fraksi</a></li>
                     </ul>
