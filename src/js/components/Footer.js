@@ -10,7 +10,7 @@ class Footer extends HTMLElement {
             <div class="max-w-screen-custom mx-auto flex flex-wrap justify-between items-start text-white">
                 <!-- START : Single Item -->
                 <div class="w-full md:w-1/2 lg:w-1/4 mt-10 lg:mt-0 px-5">
-                    <img src="/src/img/content/logo.png" alt="Logo DPRD Kabupaten Pekalongan">
+                    <img class="w-1/2" src="/src/img/content/logo.png" alt="Logo DPRD Kabupaten Pekalongan">
                     <div class="lg:pr-16 pt-6 text-sm md:text-custom">
                         <a href="#">Jl. Alun-alun Utara No. 2 Kajen, Jawa Tengah Kode Pos 51161 Indonesia.</a>
                     </div>

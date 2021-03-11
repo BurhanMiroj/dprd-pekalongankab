@@ -20,13 +20,13 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
-      red: colors.red,
+      red: {...colors.red, 950: "#FF0000"},
       yellow: colors.amber,
       green: {...colors.emerald, 950: "#00C875"},
-      blue: {...colors.blue, 950: "#303D5F"},
+      blue: {...colors.blue, 950: "#303D5F", 1000: "#1DA1F2", 1050: "#3B5998"},
       indigo: colors.indigo,
       purple: colors.violet,
-      pink: colors.pink,
+      pink: {...colors.pink, 950: "#E1306C"},
     },
     spacing: {
       px: "1px",
@@ -183,6 +183,7 @@ module.exports = {
     },
     fontSize: {
       custom: ["15px", {lineHeight: "1.6rem"}],
+      xxs: ["0.6rem", { lineHeight: "1rem" }],
       xs: ["0.75rem", { lineHeight: "1rem" }],
       sm: ["0.875rem", { lineHeight: "1.25rem" }],
       // custom

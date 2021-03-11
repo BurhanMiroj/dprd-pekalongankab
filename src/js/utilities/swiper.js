@@ -29,6 +29,7 @@ const swiperFraksi = new Swiper(".swiper-fraksi", {
   },
   spaceBetween: 10
 });
+
 const swiperObjekWisata = new Swiper(".swiper-objek-wisata", {
 slidesPerView: 1,
   autoplay: {

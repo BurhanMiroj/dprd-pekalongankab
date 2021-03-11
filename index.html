@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - DPRD Pekalongan</title>
     <!-- open graph -->
-    
     <link rel="icon" href="/src/img/favicon.ico" />
     <!-- css -->
     <link rel="stylesheet" href="/dist/css/tailwind.css">
@@ -24,49 +23,46 @@
           <div class="max-w-screen-custom mx-auto flex justify-between items-center flex-row-reverse lg:flex-row px-5 py-3 lg:py-4">
               <!-- Logo -->
               <a href="/index.html" class="flex justify-end items-center">
-                <div id="search-button" class="cursor-pointer lg:hidden"><img class="mx-6" src="/src/img/content/search.svg" alt="Mobile search button"></div>
+                <div id="search-button" class="cursor-pointer lg:hidden"><img class="mr-6" src="/src/img/content/search.svg" alt="Mobile search button"></div>
                 <img class="hidden lg:block w-full md:w-40" src="/src/img/content/logo.png" alt="Logo DPRD Kabupaten Pekalongan">
                 <img class="block lg:hidden w-10" src="/src/img/content/mobile-logo.png" alt="Logo DPRD Kabupaten Pekalongan">
               </a>
               <!-- START : Nav List -->
-              <div class="mobile-navbar fixed z-20 top-0 left-0 lg:relative w-3/4 md:w-2/5 lg:w-auto h-full bg-white lg:bg-transparent transition-all duration-300">
+              <div class="mobile-navbar fixed z-20 top-0 left-0 lg:relative w-4/5 md:w-2/5 lg:w-auto h-full lg:h-auto bg-white lg:bg-transparent transition-all duration-300">
                 <ul class="font-link nav-list text-md relative flex flex-col lg:flex-row lg:uppercase lg:font-medium text-black lg:text-white">
                     <li class="flex justify-between items-center p-2.5 lg:hidden border-b bg-gray-300">
-                      <img class="w-40 py-1" src="/src/img/content/logo.png" alt="">
-                      <div class="nav-close-btn transition-all duration-200 hover:bg-gray-100 cursor-pointer p-3 rounded-md">
+                      <img class="w-32 py-1.5 mt-0.5" src="/src/img/content/logo.png" alt="">
+                      <!-- <div class="nav-close-btn transition-all duration-200 hover:bg-gray-100 cursor-pointer p-3 rounded-md">
                           <img src="/src/img/content/close.svg" alt="Close btn">
-                      </div>
+                      </div> -->
                     </li>
                     <li class="nav-link pt-2 lg:pt-0"><a href="#"><img class="w-6" src="/src/img/content/icon/home.svg" alt="">Home</a></li>
                     <li class="nav-link relative pb-2 lg:pb-0 border-b lg:border-none"><a href="#fraksi"><img class="w-6" src="/src/img/content/icon/fraksi.svg" alt="">Fraksi</a></li>
                     <!-- Dropdown Menu -->
                     <li class="nav-link dropdown-menu relative"><a href="#"><img class="w-6" src="/src/img/content/icon/profile.svg" alt="">Profil<i class="fas fa-chevron-down"></i></a>
                       <ul id="dropdown" class="dropdown-content text-sm hidden capitalize flex-col border mx-4 lg:mt-7 relative lg:absolute w-auto lg:w-72 bg-white lg:text-blue-950">
-                        <li class="border-b pl-4 lg:pl-2"><a href="#">Selayang Pandang</a></li>
-                        <li class="border-b pl-4 lg:pl-2"><a href="#">Tugas dan Wewenang Dewan</a></li>
-                        <li class="border-b pl-4 lg:pl-2"><a href="#">Tugas Sekretariat</a></li>
-                        <li class="border-b pl-4 lg:pl-2"><a href="#">Struktur Sekretariat</a></li>
+                        <li class="dropdown-link border-b pl-4 lg:pl-2"><a href="#">Selayang Pandang</a></li>
+                        <li class="dropdown-link border-b pl-4 lg:pl-2"><a href="#">Tugas dan Wewenang Dewan</a></li>
+                        <li class="dropdown-link border-b pl-4 lg:pl-2"><a href="#">Tugas Sekretariat</a></li>
+                        <li class="dropdown-link border-b pl-4 lg:pl-2"><a href="#">Struktur Sekretariat</a></li>
                       </ul>
                     </li>
                     <!-- Dropdown Menu -->
                     <li class="nav-link dropdown-menu relative lg:pt-0"><a href="#"><img class="w-6" src="/src/img/content/icon/alat-kelengkapan.svg" alt="">Alat Kelengkapan<i class="fas fa-chevron-down"></i></a>
                       <ul id="dropdown" class="dropdown-content text-sm hidden capitalize flex-col border mx-4 lg:mt-7 relative lg:absolute w-auto lg:w-72 bg-white lg:text-blue-950">
-                        <li class="border-b pl-4 lg:pl-2"><a href="#">Pimpinan DPRD</a></li>
-                        <li class="border-b pl-4 lg:pl-2"><a href="#">Komisi I</a></li>
-                        <li class="border-b pl-4 lg:pl-2"><a href="#">Komisi II</a></li>
-                        <li class="border-b pl-4 lg:pl-2"><a href="#">Komisi III</a></li>
-                        <li class="border-b pl-4 lg:pl-2"><a href="#">Komisi IV</a></li>
-                        <li class="border-b pl-4 lg:pl-2"><a href="#">Badan Anggaran</a></li>
-                        <li class="border-b pl-4 lg:pl-2"><a href="#">Badan Musyawarah</a></li>
-                        <li class="border-b pl-4 lg:pl-2"><a href="#">Badan Pemperda</a></li>
-                        <li class="border-b pl-4 lg:pl-2"><a href="#">Badan Kehormatan</a></li>
+                        <li class="dropdown-link border-b pl-4 lg:pl-2"><a href="#">Pimpinan DPRD</a></li>
+                        <li class="dropdown-link border-b pl-4 lg:pl-2"><a href="/src/pages/komisi.html">Komisi I, II, III, IV</a></li>
+                        <li class="dropdown-link border-b pl-4 lg:pl-2"><a href="#">Badan Anggaran</a></li>
+                        <li class="dropdown-link border-b pl-4 lg:pl-2"><a href="#">Badan Musyawarah</a></li>
+                        <li class="dropdown-link border-b pl-4 lg:pl-2"><a href="#">Badan Pemperda</a></li>
+                        <li class="dropdown-link border-b pl-4 lg:pl-2"><a href="#">Badan Kehormatan</a></li>
                       </ul>
                     </li>
                     <!-- Dropdown Menu -->
                     <li class="nav-link dropdown-menu relative pb-2 lg:pb-0 border-b lg:border-none"><a href="#"><img class="w-6" src="/src/img/content/icon/produk-hukum.svg" alt="">Produk Hukum<i class="fas fa-chevron-down"></i></a>
                       <ul id="dropdown" class="dropdown-content text-sm hidden capitalize flex-col border mx-4 lg:mt-7 relative lg:absolute w-auto lg:w-72 bg-white lg:text-blue-950">
-                        <li class="border-b pl-4 lg:pl-2"><a href="#">Peraturan Daerah</a></li>
-                        <li class="border-b pl-4 lg:pl-2"><a href="#">Peraturan Bupati</a></li>
+                        <li class="dropdown-link border-b pl-4 lg:pl-2"><a href="#">Peraturan Daerah</a></li>
+                        <li class="dropdown-link border-b pl-4 lg:pl-2"><a href="#">Peraturan Bupati</a></li>
                       </ul>
                     </li>
                     <li class="nav-link pt-2 lg:pt-0"><a href="#"><img class="w-6" src="/src/img/content/icon/galeri.svg" alt="">Galeri</a></li>
