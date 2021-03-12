@@ -173,3 +173,7 @@
 .dropdown-content li:hover {
   background-color: #ddd;
 }
+
+#pagination::-webkit-scrollbar {
+  height: 3px;
+}

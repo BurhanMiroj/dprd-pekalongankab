@@ -4,181 +4,234 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artikel - DPRD Pekalongan</title>
+    <title>Detail artikel - DPRD Pekalongan</title>
     <!-- open graph -->
-    
+    <!--  -->
     <link rel="icon" href="/src/img/favicon.ico" />
     <!-- css -->
     <link rel="stylesheet" href="/dist/css/tailwind.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/src/css/app.css" />
     <link rel="stylesheet" href="/src/css/custom.css" />
 </head>
 <body>
-  <!-- START : Header -->
-    <header>
-      <!-- START :  Navbar -->
-        <nav class="w-full py-1 lg:py-2 fixed z-50 top-0 left-0 bg-blue-950">
-          <div class="max-w-screen-2xl mx-auto">
-          <div class="max-w-screen-custom mx-auto flex justify-between items-center flex-row-reverse lg:flex-row px-5 py-3 lg:py-4">
-              <!-- Logo -->
-              <a href="/index.html" class="flex justify-end items-center">
-                <div id="search-button" class="cursor-pointer lg:hidden"><img class="mx-6" src="/src/img/content/search.svg" alt="Mobile search button"></div>
-                <img class="hidden lg:block w-full md:w-40" src="/src/img/content/logo.png" alt="Logo DPRD Kabupaten Pekalongan">
-                <img class="block lg:hidden w-10" src="/src/img/content/mobile-logo.png" alt="Logo DPRD Kabupaten Pekalongan">
-              </a>
-              <!-- START : Nav List -->
-              <div class="mobile-navbar fixed z-20 top-0 left-0 lg:relative w-3/4 md:w-2/5 lg:w-auto h-full bg-white lg:bg-transparent transition-all duration-300">
-                <ul class="font-link nav-list text-md relative flex flex-col lg:flex-row lg:uppercase lg:font-medium text-black lg:text-white">
-                    <li class="flex justify-between items-center p-2.5 lg:hidden border-b bg-gray-300">
-                      <img class="w-40 py-1" src="/src/img/content/logo.png" alt="">
-                      <div class="nav-close-btn transition-all duration-200 hover:bg-gray-100 cursor-pointer p-3 rounded-md">
-                          <img src="/src/img/content/close.svg" alt="Close btn">
-                      </div>
-                    </li>
-                    <li class="nav-link pt-2 lg:pt-0"><a href="/index.html"><img class="w-6" src="/src/img/content/icon/home.svg" alt="">Home</a></li>
-                    <li class="nav-link relative pb-2 lg:pb-0 border-b lg:border-none"><a href="/index.html#fraksi"><img class="w-6" src="/src/img/content/icon/fraksi.svg" alt="">Fraksi</a></li>
-                    <!-- Dropdown Menu -->
-                    <li class="nav-link dropdown-menu relative"><a href="#"><img class="w-6" src="/src/img/content/icon/profile.svg" alt="">Profil<i class="fas fa-chevron-down"></i></a>
-                      <ul id="dropdown" class="dropdown-content text-sm hidden capitalize flex-col border mx-4 lg:mt-7 relative lg:absolute w-auto lg:w-72 bg-white lg:text-blue-950">
-                        <li class="border-b lg:pl-4"><a href="#">Selayang Pandang</a></li>
-                        <li class="border-b lg:pl-4"><a href="#">Tugas dan Wewenang Dewan</a></li>
-                        <li class="border-b lg:pl-4"><a href="#">Tugas Sekretariat</a></li>
-                        <li class="border-b lg:pl-4"><a href="#">Struktur Sekretariat</a></li>
-                      </ul>
-                    </li>
-                    <!-- Dropdown Menu -->
-                    <li class="nav-link dropdown-menu relative lg:pt-0"><a href="#"><img class="w-6" src="/src/img/content/icon/alat-kelengkapan.svg" alt="">Alat Kelengkapan<i class="fas fa-chevron-down"></i></a>
-                      <ul id="dropdown" class="dropdown-content text-sm hidden capitalize flex-col border mx-4 lg:mt-7 relative lg:absolute w-auto lg:w-72 bg-white lg:text-blue-950">
-                        <li class="border-b lg:pl-4"><a href="#">Selayang Pandang</a></li>
-                        <li class="border-b lg:pl-4"><a href="#">Tugas dan Wewenang Dewan</a></li>
-                        <li class="border-b lg:pl-4"><a href="#">Tugas Sekretariat</a></li>
-                        <li class="border-b lg:pl-4"><a href="#">Struktur Sekretariat</a></li>
-                      </ul>
-                    </li>
-                    <!-- Dropdown Menu -->
-                    <li class="nav-link dropdown-menu relative pb-2 lg:pb-0 border-b lg:border-none"><a href="#"><img class="w-6" src="/src/img/content/icon/produk-hukum.svg" alt="">Produk Hukum<i class="fas fa-chevron-down"></i></a>
-                      <ul id="dropdown" class="dropdown-content text-sm hidden capitalize flex-col border mx-4 lg:mt-7 relative lg:absolute w-auto lg:w-72 bg-white lg:text-blue-950">
-                        <li class="border-b lg:pl-4"><a href="#">Selayang Pandang</a></li>
-                        <li class="border-b lg:pl-4"><a href="#">Tugas dan Wewenang Dewan</a></li>
-                        <li class="border-b lg:pl-4"><a href="#">Tugas Sekretariat</a></li>
-                        <li class="border-b lg:pl-4"><a href="#">Struktur Sekretariat</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-link pt-2 lg:pt-0"><a href="#"><img class="w-6" src="/src/img/content/icon/galeri.svg" alt="">Galeri</a></li>
-                    <li class="nav-link"><a href="#"><img class="w-6" src="/src/img/content/icon/kontak.svg" alt="">Kontak</a></li>
-                    <li id="search-button" class="pt-3 cursor-pointer hidden lg:flex w-auto"><i class="fas fa-search"></i></li>
-                </ul>
-              </div>
-              <!-- Show only when the navbar classlist contains nav-active -->
-              <div class="close-layer fixed top-0 left-0 z-0 w-full h-screen bg-black opacity-50 cursor-pointer"></div>
-              <!-- END : Nav List -->
-              <div id="nav-btn" class="block lg:hidden cursor-pointer">
-                <img class="w-auto" src="/src/img/content/nav-button.svg" alt="">
-              </div>
-          </div>
-          </div>
-        </nav>
-      <!-- END : Navbar -->
-      <!-- START : Pagination -->
-      <section id="pagination" class="text-sm flex items-center mt-20 pt-2 lg:mt-24 text-blue-950 bg-gray-300">
-          <div class="max-w-screen-custom w-full mx-auto py-3 text-xs pl-6">
-              <span><a class="hover:text-red-500 hover:underline" href="/index.html">Home</a></span>
-              <span><small>/</small></span>
-              <span><a class="hover:text-red-500 hover:underline" href="/src/pages/artikel.html">Artikel</a></span>
-              <span><small>/</small></span>
-              <span>Forum Gabungan OPD Fisik dan Prasarana Kabupaten Pekalongan</span>
-            </div>
-        </section>
-    <!-- END : Pagination -->
-    </header>
-  <!-- END : Header -->
-  <!-- START : Main area -->
-    <main class="p-5">
-        <div class="max-w-screen-lg mx-auto lg:px-14">
-            <!-- START : Heading artikel -->
-            <div class="w-full text-center py-10">
-                <p id="tanggal-posting" class="font-medium text-gray-600 uppercase text-xs">02 Februari 2021 / Admin / <i class="fas fa-eye"></i> 17</p>
-                <h1 class="text-2xl lg:text-3xl font-serif font-bold py-5">Forum Gabungan OPD Fisik dan Prasarana Kabupaten Pekalongan</h1>
-                <div class="flex text-white justify-center">
-                    <span class="bg-red-950 text-xs px-6 py-1 mx-3">Sosial</span>
-                    <span class="bg-blue-1000 text-xs px-6 py-1 mx-3">Trend</span>
-                </div>
-            </div>
-            <!-- END : Heading artikel -->
-            <!-- START : Gambar artikel -->
-            <div class="w-full">
-                <img class="w-full" src="/src/img/content/artikel.png" alt="">
-            </div>
-            <!-- END : Gambar artikel -->
-            <!-- START : Konten utama -->
-            <div id="konten-artikel" class="w-full text-gray-600 mt-10 leading-loose">
-                <p><b>Kajen, Senin(08/03/2021)</b> - Komisi III DPRD Kabupaten Pekalongan menghadiri Forum Gabungan OPD Fisik dan Prasarana Kabupaten Pekalongan dalam rangka Penyusunan Rencana Kerja Pemerintah Daerah (RKPD) Tahun 2022 di Kantor Bappeda Kabupaten Pekalongan, Senin (08/03/2021) siang. Selain Anggota Komisi III DPRD Kabupaten Pekalongan juga dihadiri dari perwakilan Kecamatan dan OPD terkait. [ HumasSetwanKab ]</p>
-            </div>
-            <!-- END : Konten utama -->
-            <!-- START : Share ke sosial media -->
-            <div id="konten-artikel" class="w-full text-gray-500 mt-10">
-                <h2 class="text-md font-semibold uppercase text-center">Bagikan Artikel Ini</h2>
-                <div class="flex flex-wrap w-full lg:w-1/2 text-white mx-auto my-5">
-                    <a href="#" class="w-full text-center md:text-left md:w-1/2 bg-blue-1050 text-xs font-semibold"><i class="fab fa-facebook-f py-4 px-5"></i>Bagikan ke Facebook</a>
-                    <a href="#" class="w-full text-center md:text-left md:w-1/2 bg-blue-1000 text-xs font-semibold"><i class="fab fa-twitter py-4 px-5"></i>Bagikan ke Twitter</a>
-                </div>
-            </div>
-            <!-- END : Share ke sosial media -->
-            <!-- START : Info -->
-            <div class="w-full border-t mt-12 pt-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="w-full">
-                        <h3 class="text-xs md:text-base">Tentang Penulis</h3>
-                        <div class="w-full flex border rounded-sm mt-2">
-                            <div class="w-1/4">
-                                <img class="mx-auto py-4" src="/src/img/content/admin.svg" alt="">
-                            </div>
-                            <div class="w-3/4 text-sm flex flex-col justify-center">
-                                <p>Admin</p>
-                                <a href="/index.html">dprd-pekalongankab.go.id</a>
-                            </div>
+    <!-- START : Header -->
+        <header>
+            <!-- START :  Navbar -->
+                <nav class="w-full py-1 lg:py-2 fixed z-50 top-0 left-0 bg-blue-950">
+                    <div class="max-w-screen-2xl mx-auto">
+                    <div class="max-w-screen-custom mx-auto flex justify-between items-center flex-row-reverse lg:flex-row px-5 py-3 lg:py-4">
+                        <!-- Logo -->
+                        <div class="flex justify-end items-center">
+                            <div id="search-button" class="cursor-pointer lg:hidden relative z-10"><img class="mx-6" src="/src/img/content/search.svg" alt="Mobile search button"></div>
+                            <a href="#"><img class="hidden lg:block w-full md:w-40 relative z-0" src="/src/img/content/logo.png" alt="Logo DPRD Kabupaten Pekalongan"></a>
+                            <a href="#"><img class="block lg:hidden w-10 relative z-0" src="/src/img/content/mobile-logo.png" alt="Logo DPRD Kabupaten Pekalongan"></a>
+                        </div>
+                        <!-- START : Nav List -->
+                        <div class="mobile-navbar fixed z-20 top-0 left-0 lg:relative w-3/4 md:w-2/5 lg:w-auto h-full bg-white lg:bg-transparent transition-all duration-300">
+                            <ul class="font-link nav-list text-md relative flex flex-col lg:flex-row lg:uppercase lg:font-medium text-black lg:text-white">
+                                <li class="flex justify-between items-center p-2.5 lg:hidden border-b bg-gray-300">
+                                    <img class="w-40 py-1" src="/src/img/content/logo.png" alt="">
+                                    <div class="nav-close-btn transition-all duration-200 hover:bg-gray-100 cursor-pointer p-3 rounded-md">
+                                        <img src="/src/img/content/close.svg" alt="Close btn">
+                                    </div>
+                                </li>
+                                <li class="nav-link pt-2 lg:pt-0"><a href="/index.html"><img class="w-6" src="/src/img/content/icon/home.svg" alt="">Home</a></li>
+                                <li class="nav-link relative pb-2 lg:pb-0 border-b lg:border-none"><a href="/index.html#fraksi"><img class="w-6" src="/src/img/content/icon/fraksi.svg" alt="">Fraksi</a></li>
+                                <!-- Dropdown Menu -->
+                                <li class="nav-link dropdown-menu relative"><a href="#"><img class="w-6" src="/src/img/content/icon/profile.svg" alt="">Profil<i class="fas fa-chevron-down"></i></a>
+                                    <ul id="dropdown" class="dropdown-content text-sm hidden capitalize flex-col border mx-4 lg:mt-7 relative lg:absolute w-auto lg:w-72 bg-white lg:text-blue-950">
+                                        <li class="border-b lg:pl-4"><a href="#">Selayang Pandang</a></li>
+                                        <li class="border-b lg:pl-4"><a href="#">Tugas dan Wewenang Dewan</a></li>
+                                        <li class="border-b lg:pl-4"><a href="#">Tugas Sekretariat</a></li>
+                                        <li class="border-b lg:pl-4"><a href="#">Struktur Sekretariat</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Dropdown Menu -->
+                                <li class="nav-link dropdown-menu relative lg:pt-0"><a href="#"><img class="w-6" src="/src/img/content/icon/alat-kelengkapan.svg" alt="">Alat Kelengkapan<i class="fas fa-chevron-down"></i></a>
+                                    <ul id="dropdown" class="dropdown-content text-sm hidden capitalize flex-col border mx-4 lg:mt-7 relative lg:absolute w-auto lg:w-72 bg-white lg:text-blue-950">
+                                        <li class="border-b lg:pl-4"><a href="#">Selayang Pandang</a></li>
+                                        <li class="border-b lg:pl-4"><a href="#">Tugas dan Wewenang Dewan</a></li>
+                                        <li class="border-b lg:pl-4"><a href="#">Tugas Sekretariat</a></li>
+                                        <li class="border-b lg:pl-4"><a href="#">Struktur Sekretariat</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Dropdown Menu -->
+                                <li class="nav-link dropdown-menu relative pb-2 lg:pb-0 border-b lg:border-none"><a href="#"><img class="w-6" src="/src/img/content/icon/produk-hukum.svg" alt="">Produk Hukum<i class="fas fa-chevron-down"></i></a>
+                                    <ul id="dropdown" class="dropdown-content text-sm hidden capitalize flex-col border mx-4 lg:mt-7 relative lg:absolute w-auto lg:w-72 bg-white lg:text-blue-950">
+                                        <li class="border-b lg:pl-4"><a href="#">Selayang Pandang</a></li>
+                                        <li class="border-b lg:pl-4"><a href="#">Tugas dan Wewenang Dewan</a></li>
+                                        <li class="border-b lg:pl-4"><a href="#">Tugas Sekretariat</a></li>
+                                        <li class="border-b lg:pl-4"><a href="#">Struktur Sekretariat</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-link pt-2 lg:pt-0"><a href="#"><img class="w-6" src="/src/img/content/icon/galeri.svg" alt="">Galeri</a></li>
+                                <li class="nav-link"><a href="#"><img class="w-6" src="/src/img/content/icon/kontak.svg" alt="">Kontak</a></li>
+                                <li id="search-button" class="pt-3 cursor-pointer hidden lg:flex w-auto"><i class="fas fa-search"></i></li>
+                            </ul>
+                        </div>
+                        <!-- Show only when the navbar classlist contains nav-active -->
+                        <div class="close-layer fixed top-0 left-0 z-0 w-full h-screen bg-black opacity-50 cursor-pointer"></div>
+                        <!-- END : Nav List -->
+                        <div id="nav-btn" class="block lg:hidden cursor-pointer">
+                            <img class="w-auto" src="/src/img/content/nav-button.svg" alt="">
                         </div>
                     </div>
-                    <div class="flex flex-col">
-                        <h3 class="text-xs md:text-base">Sosial Media Kami</h3>
-                        <div class="w-full border rounded-sm mt-2">
-                            <div class="w-full flex p-8">
-                                <h3 class="font-semibold uppercase text-sm">Sosial Media</h3>
-                                <div class="text-xl flex ml-2 lg:ml-5">
-                                    <a href="#" class="mx-5 grid place-items-center text-blue-1050">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="mx-5 grid place-items-center text-blue-1000">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="mx-5 grid place-items-center text-pink-950">
-                                        <i class="fab fa-instagram-square"></i>
-                                    </a>
-                                    <a href="#" class="mx-5 grid place-items-center text-red-950">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
+                </div>
+            </nav>
+        <!-- END : Navbar -->
+            <!-- START : Pagination -->
+                <section class="text-sm w-auto flex items-center mt-20 pt-1 md:pt-2 lg:mt-24 text-blue-950 bg-gray-300">
+                    <div id="pagination" class="max-w-screen-custom w-full mx-auto py-3 text-xs px-6 whitespace-nowrap overflow-x-scroll sm:overflow-x-hidden">
+                        <span><a class="hover:text-red-500 hover:underline" href="/index.html">Home</a></span>
+                        <span><small>/</small></span>
+                        <span><a class="hover:text-red-500 hover:underline" href="/src/pages/artikel.html">Artikel</a></span>
+                        <span><small>/</small></span>
+                        <span>Forum Gabungan OPD Fisik dan Prasarana Kabupaten Pekalongan</span>
+                    </div>
+                </section>
+                <!-- END : Pagination -->
+            </header>
+        <!-- END : Header -->
+        <!-- START : Main area -->
+        <main class="p-5">
+            <div class="max-w-screen-lg mx-auto lg:px-14">
+                <!-- START : Heading artikel -->
+                <div class="w-full text-center py-10">
+                    <p id="tanggal-posting" class="font-medium text-gray-600 uppercase text-xs">02 Februari 2021 / Admin / <i class="fas fa-eye"></i> 17</p>
+                    <h1 class="text-2xl lg:text-3xl font-serif font-bold py-5">Forum Gabungan OPD Fisik dan Prasarana Kabupaten Pekalongan</h1>
+                    <div class="flex text-white justify-center">
+                        <span class="bg-red-950 text-xs px-6 py-1 mx-3">Sosial</span>
+                        <span class="bg-blue-1000 text-xs px-6 py-1 mx-3">Trend</span>
+                    </div>
+                </div>
+                <!-- END : Heading artikel -->
+                <!-- START : Gambar artikel -->
+                <div class="w-full">
+                    <img class="w-full" src="/src/img/content/artikel.png" alt="">
+                </div>
+                <!-- END : Gambar artikel -->
+                <!-- START : Konten utama -->
+                <div id="konten-artikel" class="w-full text-gray-600 mt-10 leading-loose">
+                    <p><b>Kajen, Senin(08/03/2021)</b> - Komisi III DPRD Kabupaten Pekalongan menghadiri Forum Gabungan OPD Fisik dan Prasarana Kabupaten Pekalongan dalam rangka Penyusunan Rencana Kerja Pemerintah Daerah (RKPD) Tahun 2022 di Kantor Bappeda Kabupaten Pekalongan, Senin (08/03/2021) siang. Selain Anggota Komisi III DPRD Kabupaten Pekalongan juga dihadiri dari perwakilan Kecamatan dan OPD terkait. [ HumasSetwanKab ]</p>
+                </div>
+                <!-- END : Konten utama -->
+                <!-- START : Share ke sosial media -->
+                <div id="share-artikel" class="w-full text-gray-500 mt-10">
+                    <h2 class="text-md font-semibold uppercase text-center">Bagikan Artikel Ini</h2>
+                    <div class="flex flex-wrap w-full justify-center text-white mx-auto my-5">
+                        <a href="#" class="w-full text-center md:text-left md:w-72 md:mx-4 bg-blue-1050 border-2 border-blue-1050 hover:bg-white hover:text-blue-1050 transition duration-300 text-xs font-semibold"><i class="fab fa-facebook-f py-4 px-5"></i>Bagikan ke Facebook</a>
+                        <a href="#" class="w-full text-center md:text-left md:w-72 md:mx-4 bg-blue-1000 border-2 border-blue-1000 hover:bg-white hover:text-blue-1000 transition duration-300 text-xs font-semibold"><i class="fab fa-twitter py-4 px-5"></i>Bagikan ke Twitter</a>
+                    </div>
+                </div>
+                <!-- END : Share ke sosial media -->
+                <!-- START : Info -->
+                <div class="w-full border-t mt-12 pt-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="w-full">
+                            <h3 class="text-xs md:text-base">Tentang Penulis</h3>
+                            <div class="w-full flex border rounded-sm mt-2">
+                                <div class="w-1/4">
+                                    <img class="mx-auto py-4" src="/src/img/content/admin.svg" alt="">
+                                </div>
+                                <div class="w-3/4 text-sm flex flex-col justify-center">
+                                    <p>Admin</p>
+                                    <a href="/index.html">dprd-pekalongankab.go.id</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <h3 class="text-xs md:text-base">Sosial Media Kami</h3>
+                            <div class="w-full border rounded-sm mt-2">
+                                <div class="w-full flex p-8">
+                                    <h3 class="w-full font-semibold uppercase text-xs md:text-sm">Sosial Media</h3>
+                                    <div class="text-xl w-auto flex justify-center">
+                                        <a href="#" class="mx-4 md:mx-2 lg:mx-5 grid place-items-center text-blue-1050">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" class="mx-4 md:mx-2 lg:mx-5 grid place-items-center text-blue-1000">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#" class="mx-4 md:mx-2 lg:mx-5 grid place-items-center text-pink-950">
+                                            <i class="fab fa-instagram-square"></i>
+                                        </a>
+                                        <a href="#" class="mx-4 md:mx-2 lg:mx-5 grid place-items-center text-red-950">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- END : Info -->
                 </div>
-                <!-- END : Info -->
             </div>
-        </div>
-    </main>
-    <div class="w-full bg-gray-200 mt-10">
-        <!-- START : Berita Section -->
-        
-        <!-- END : Berita Section -->
-    </div>
-  <!-- END : Main area -->
-
-  <custom-footer></custom-footer>
-  <!-- Script -->
-  <script src="https://kit.fontawesome.com/b07851900c.js" crossorigin="anonymous"></script>
-  <script src="/src/js/utilities/nav.js"></script>
-  <script src="/src/js/components/Footer.js"></script>
-</body>
+        </main>
+        <!-- START : Rekomendasi Berita -->
+            <section class="w-full bg-gray-200 mt-10  px-4 lg:px-14">
+                <div class="max-w-screen-lg mx-auto flex flex-wrap-reverse py-14">
+                    <div class="w-full md:w-1/2 flex flex-col lg:pr-4">   
+                    <h2 class="my-3 font-semibold">Orang lain juga membaca</h2>
+                    <!-- START : Single Item -->
+                        <div class="w-full flex flex-col mb-5 xl:mb-0 lg:py-2">
+                            <div class="w-full flex justify-between items-center">
+                                <a class="w-1/3 lg:w-1/5" href="/src/pages/detail-artikel.html"><img class="w-full" src="/src/img/content/berita-mini.png" alt=""></a>
+                                <a class="sm:font-semibold text-sm sm:text-lg md:text-sm lg:text-md xl:text-sm hover:underline pl-4" href="/src/pages/detail-artikel.html">Dewan: Siswa Mulai Bosan dengan Pembelajaran Jarak Jauh</a>
+                            </div>
+                            <p class="font-medium text-gray-600 uppercase text-xxs sm:text-xs pt-2">02 Februari 2021 / Admin / <i class="fas fa-eye"></i> 17</p>
+                        </div>
+                    <!-- END Single Item -->
+                    <!-- START : Single Item -->
+                        <div class="w-full flex flex-col mb-5 xl:mb-0 lg:py-2">
+                            <div class="w-full flex justify-between items-center">
+                                <a class="w-1/3 lg:w-1/5" href="/src/pages/detail-artikel.html"><img class="w-full" src="/src/img/content/berita-mini.png" alt=""></a>
+                                <a class="sm:font-semibold text-sm sm:text-lg md:text-sm lg:text-md xl:text-sm hover:underline pl-4" href="/src/pages/detail-artikel.html">Dewan: Siswa Mulai Bosan dengan Pembelajaran Jarak Jauh</a>
+                            </div>
+                            <p class="font-medium text-gray-600 uppercase text-xxs sm:text-xs pt-2">02 Februari 2021 / Admin / <i class="fas fa-eye"></i> 17</p>
+                        </div>
+                    <!-- END Single Item -->
+                    <!-- START : Single Item -->
+                        <div class="w-full flex flex-col mb-5 xl:mb-0 lg:py-2">
+                            <div class="w-full flex justify-between items-center">
+                                <a class="w-1/3 lg:w-1/5" href="/src/pages/detail-artikel.html"><img class="w-full" src="/src/img/content/berita-mini.png" alt=""></a>
+                                <a class="sm:font-semibold text-sm sm:text-lg md:text-sm lg:text-md xl:text-sm hover:underline pl-4" href="/src/pages/detail-artikel.html">Dewan: Siswa Mulai Bosan dengan Pembelajaran Jarak Jauh</a>
+                            </div>
+                            <p class="font-medium text-gray-600 uppercase text-xxs sm:text-xs pt-2">02 Februari 2021 / Admin / <i class="fas fa-eye"></i> 17</p>
+                        </div>
+                    <!-- END Single Item -->
+                </div>
+                <div class="w-full md:w-1/2 flex flex-col">   
+                    <h2 class="my-3 font-semibold">Berita Terbaru</h2>
+                    <div class="grid grid-cols-2 gap-x-4">
+                        <!-- START : Single Item -->
+                            <div class="w-full flex flex-col mb-5 xl:mb-0 lg:py-2">
+                                <a class="w-full" href="/src/pages/detail-artikel.html"><img class="w-full" src="/src/img/content/berita-mini.png" alt=""></a>
+                                    <div class="w-full flex justify-between items-center">
+                                        <a class="sm:font-semibold text-sm sm:text-lg md:text-sm lg:text-md xl:text-sm hover:underline py-3" href="/src/pages/detail-artikel.html">Dewan: Siswa Mulai Bosan dengan Pembelajaran Jarak Jauh</a>
+                                    </div>
+                                    <p class="font-medium text-gray-600 uppercase text-xxs md:text-xs pt-1">02 Februari 2021 / Admin / <i class="fas fa-eye"></i> 17</p>
+                                </div>
+                            <!-- END : Single Item -->
+                            <!-- START : Single Item -->
+                                <div class="w-full flex flex-col mb-5 xl:mb-0 lg:py-2">
+                                    <a class="w-full" href="/src/pages/detail-artikel.html"><img class="w-full" src="/src/img/content/berita-mini.png" alt=""></a>
+                                        <div class="w-full flex justify-between items-center">
+                                            <a class="sm:font-semibold text-sm sm:text-lg md:text-sm lg:text-md xl:text-sm hover:underline py-3" href="/src/pages/detail-artikel.html">Dewan: Siswa Mulai Bosan dengan Pembelajaran Jarak Jauh</a>
+                                        </div>
+                                    <p class="font-medium text-gray-600 uppercase text-xxs md:text-xs pt-1">02 Februari 2021 / Admin / <i class="fas fa-eye"></i> 17</p>
+                                </div>
+                            <!-- START : Single Item -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END : Rekomendasi berita -->
+        <!-- END : Main area -->
+        <!-- START : Footer -->
+            <custom-footer></custom-footer>
+        <!-- END : Footer -->
+        <!-- Script -->
+        <script src="https://kit.fontawesome.com/b07851900c.js" crossorigin="anonymous"></script>
+        <script src="/src/js/utilities/nav.js"></script>
+        <script src="/src/js/components/Footer.js"></script>
+    </body>
 </html>

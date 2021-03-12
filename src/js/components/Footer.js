@@ -12,7 +12,7 @@ class Footer extends HTMLElement {
                 <div class="w-full md:w-1/2 lg:w-1/4 mt-10 lg:mt-0 px-5">
                     <img class="w-1/2" src="/src/img/content/logo.png" alt="Logo DPRD Kabupaten Pekalongan">
                     <div class="lg:pr-16 pt-6 text-sm md:text-custom">
-                        <a href="#">Jl. Alun-alun Utara No. 2 Kajen, Jawa Tengah Kode Pos 51161 Indonesia.</a>
+                        <a target="_blank" title="Lihat di google maps" href="https://goo.gl/maps/h2B5wQEWn2pdXB8c6">Jl. Alun-alun Utara No. 2 Kajen, Jawa Tengah Kode Pos 51161 Indonesia.</a>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/4 mt-10 lg:mt-0 px-5">
